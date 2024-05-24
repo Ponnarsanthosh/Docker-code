@@ -6,3 +6,4 @@ RUN sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/s
 RUN echo 'root:root123' | chpasswd
 RUN mkdir /var/run/sshd
 CMD [ "/usr/sbin/sshd", "-D" ]
+CMD {onum ela}
